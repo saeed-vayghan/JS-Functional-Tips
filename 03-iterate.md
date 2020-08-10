@@ -4,7 +4,7 @@
 #### Use `map, filter, reduce` instead of `for, while`
 
 
-
+#### Sample 1
 ```js
 // imperative style
 const getEmails = function(users) {
@@ -22,4 +22,48 @@ const getEmails = function(users) {
 const getEmails = users => {
   return users.filter(u => u.role === 'admin').map(u => u.email);
 }
+```
+
+
+#### Sample 2
+```js
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(item => item * 2);
+console.log(doubled); // [2, 4, 6, 8]
+
+const numbers = [1, 2, 3, 4];
+const evens = numbers.filter(item => item % 2 === 0);
+console.log(evens); // [2, 4]
+
+
+
+// The reduce() method reduces an array of values down to just one value. 
+// arr.reduce(callback[, initialValue])
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce(function (result, item) {
+  return result + item;
+}, 0);
+console.log(sum); // 10
+
+
+var pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+var petCounts = pets.reduce(function(obj, pet){
+    if (!obj[pet]) {
+        obj[pet] = 1;
+    } else {
+        obj[pet]++;
+    }
+    return obj;
+}, {});
+
+console.log(petCounts); 
+/*
+Output:
+ { 
+    dog: 2, 
+    chicken: 3, 
+    cat: 1, 
+    rabbit: 1 
+ }
+ */
 ```
