@@ -49,3 +49,29 @@ const pagination = {
 }
 calcPages(pagination.total, pagination.itemsPerPage);
 ```
+<br>
+
+#### Sample 3
+```js
+const users = [
+  {firstName: 'Jane', lastName: 'Doe'},
+  {firstName: 'John', lastName: 'Doe'}
+]
+
+const getUserDisplayName = user => `${user.firstName} ${user.lastName}`
+users.map(user => getUserDisplayName(user)) // ["Jane Doe", "John Doe"]
+
+
+// Make it point free
+const getUserDisplayName = user => `${user.firstName} ${user.lastName}`
+users.map(getUserDisplayName) // ["Jane Doe", "John Doe"]
+```
+<br>
+
+#### Sample 4
+```js
+['1', '12', '123'].map(num => parseInt(num)) // [1, 12, 123]
+
+// point free
+['1', '12', '123'].map(parseInt) // [1, NaN, 1]
+```
