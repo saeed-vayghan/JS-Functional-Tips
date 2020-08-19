@@ -22,5 +22,5 @@ The problem with object-oriented languages is they’ve got all this implicit en
 1. [06-composing.md](06-composing.md): Compsing functions
 1. [07-pointfree.md](07-pointfree.md): Pint-Free style
 1. [09-chaining.md](09-chaining.md): Cahining relevants
-1. [10-closure.md](10-closure.md ): Closure
-1. [11-Recursion.md](11-closure.md ): Recursion
+1. [10-closure.md](10-closure.md): Closure
+1. [11-Recursion.md](11-Recursion.md): Recursion
