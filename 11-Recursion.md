@@ -77,5 +77,24 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-fibonacci(10) // 89
+function memoizedFibonacci(num, memo) {
+  if (num <= 0) {
+    return 0;
+  }
+  
+  if (num === 1) {
+    return 1;
+  }
+
+  if (!memo[num]) {
+    memo[num] = memoizedFibonacci(num - 1, memo) + memoizedFibonacci(num - 2, memo);
+  }
+
+  return memo[num];
+}
+
+
+fibonacci(45); // Order 2 pow n
+memoizedFibonacci(45, {}); // order n
+
 ```
