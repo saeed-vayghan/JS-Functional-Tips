@@ -66,17 +66,15 @@ sumSalaries(Hotels); // 391
 #### Fibonacci
 ```js
 function fibonacci(num) {
-  let result
-
-  if (result) {
-    return result;
+  if (num <= 0) {
+    return 0;
   }
-
-  if (num <= 1) {
+  
+  if (num === 1) {
     return 1;
   }
 
-  return result = fibonacci(num - 1) + fibonacci(num - 2);
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
 fibonacci(10) // 89
