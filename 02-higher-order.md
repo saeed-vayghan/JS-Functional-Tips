@@ -47,3 +47,23 @@ warmer('weather')
 
     map, reduce, filter, compose, forEach
 
+```js
+const allSubsets = (arr) => {
+  return arr.reduce((subsets, value) => subsets.concat(
+      subsets.map(set => [value,...set])
+    ),
+    [[]]
+  );
+}
+
+console.log(allSubsets([1,2,3]));
+
+/*
+  [
+    [],       [ 1 ],
+    [ 2 ],    [ 2, 1 ],
+    [ 3 ],    [ 3, 1 ],
+    [ 3, 2 ], [ 3, 2, 1 ]
+  ]
+*/
+```
