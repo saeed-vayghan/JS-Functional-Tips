@@ -39,7 +39,7 @@ funxtion maker (input_1) {
 }
 
 const cooler = maker('cool')
-warmer('weather')
+cooler('weather')
 ```
 <br>
 
