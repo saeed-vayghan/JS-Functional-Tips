@@ -61,16 +61,16 @@ const mapping = pets.reduce(function(obj, pet) {
 }, initialValue);
 
 console.log(mapping); 
-/*
-Output:
-{
-  'custom-key': 'custom-val',
-  wolf: 1,
-  cat: 4,
-  dog: 2,
-  duck: 3,
-  rabbit: 1
-}
 
- */
+/*
+  Output:
+  {
+    'custom-key': 'custom-val',
+    wolf: 1,
+    cat: 4,
+    dog: 2,
+    duck: 3,
+    rabbit: 1
+  }
+*/
 ```
