@@ -46,24 +46,31 @@ const sum = numbers.reduce(function (result, item) {
 console.log(sum); // 10
 
 
-var pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
-var petCounts = pets.reduce(function(obj, pet){
-    if (!obj[pet]) {
-        obj[pet] = 1;
-    } else {
-        obj[pet]++;
-    }
-    return obj;
-}, {});
+const pets = ['wolf', 'cat', 'dog', 'duck', 'cat', 'dog', 'duck', 'duck', 'cat', 'rabbit', 'cat'];
+const initialValue = { 'custom-key': 'custom-val' };
 
-console.log(petCounts); 
+const mapping = pets.reduce(function(obj, pet) {
+  if (!obj[pet]) {
+    obj[pet] = 1;
+
+  } else {
+    obj[pet]++;
+  }
+
+  return obj;
+}, initialValue);
+
+console.log(mapping); 
 /*
 Output:
- { 
-    dog: 2, 
-    chicken: 3, 
-    cat: 1, 
-    rabbit: 1 
- }
+{
+  'custom-key': 'custom-val',
+  wolf: 1,
+  cat: 4,
+  dog: 2,
+  duck: 3,
+  rabbit: 1
+}
+
  */
 ```
