@@ -73,5 +73,6 @@ users.map(getUserDisplayName) // ["Jane Doe", "John Doe"]
 ['1', '12', '123'].map(num => parseInt(num)) // [1, 12, 123]
 
 // point free
+['1', '12', '123'].map(Number) // [1, 12, 123]
 ['1', '12', '123'].map(parseInt) // [1, NaN, 1]
 ```
