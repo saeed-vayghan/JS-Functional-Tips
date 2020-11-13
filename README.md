@@ -24,3 +24,8 @@ The problem with object-oriented languages is they’ve got all this implicit en
 1. [09-chaining.md](09-chaining.md): Cahining relevants
 1. [10-closure.md](10-closure.md): Closure
 1. [11-Recursion.md](11-Recursion.md): Recursion
+
+
+## Advanced
+1. TO DO - [Memory Leaks](https://blog.appsignal.com/2020/05/06/avoiding-memory-leaks-in-nodejs-best-practices-for-performance.html)
+1. TO DO - [Event Loop, Hoisting, ...](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
